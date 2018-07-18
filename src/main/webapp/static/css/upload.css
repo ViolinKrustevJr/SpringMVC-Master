@@ -1,0 +1,72 @@
+
+.upload-post{
+    background-color: rgb(224, 224, 224);
+    margin: 10% auto;
+    width:40%;
+    height: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2) ,
+    0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    animation-name:modelopen;
+    animation-duration: 1s;     
+}
+
+.upload-header{
+    background-color:rgb(224, 224, 224);
+    padding-top: 15px;
+}
+
+.upload-img{
+    background-color: rgb(156, 148, 148);
+    margin: 10%;
+    float: left;
+    width: 30%;
+    height: 40%;
+}
+
+.upload-video{
+    background-color: rgb(156, 148, 148);
+    margin:10%;
+    float: right;
+    width: 30%;
+    height: 40%;
+}
+
+.upload-img:hover,.upload-img:focus,
+.upload-video:hover,.upload-video:focus{
+    color: rgb(56, 20, 20);
+    background-color: rgb(119, 93, 93);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.upload-img h3,.upload-video h3{
+     padding-top: 25%;
+     text-align: center;
+}
+
+.upload-model{
+    display: none;
+    background-color: rgb(224, 224, 224);
+    margin: 10% auto;
+    width:40%;
+    height: 60%;
+}
+
+.closeBtnPost{
+    color: rgb(87, 84, 81);
+    float:right;
+    font-size: 30px;
+
+}
+
+.model-upload-p{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color:rgba(0, 0, 0, 0.5);
+ }

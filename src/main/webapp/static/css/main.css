@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+ 	z-index: 500;
+	position:fixed;
+  	top: 0;
+  	width: 100%;
+  	margin-bottom: 60px;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 450px
+}
+
+/* Set gray background color and 100% height */
+
+.sidenav-left{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	background-color: #2E2E2E;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 52px;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: bold;
+    color:white;
+}
+
+#nav-title{
+	margin-top: 15px;
+	margin-bottom: 20px;
+    font-size:20px;
+    font-weight: bolder;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+	color:#BDBDBD;
+}
+
+.sidenav-right{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+	background-color: #2E2E2E;
+    overflow-x: hidden;
+    margin-top: 52px;
+}
+
+.nav-item{
+	min-width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.nav-item:hover {
+	min-width: 100%;
+	text-decoration: none;
+    background-color: #585858;
+}
+
+.nav-item a:hover {
+	text-decoration: none;
+}
+
+.main-content{
+	padding-left:250px;
+	padding-right: 350px;
+	padding-top: 60px;
+	vertical-align: middle;	
+}
+
+
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+.row .content{
+	margin-bottom: 40px;	
+}
+
+.mainButton {
+	-moz-box-shadow: 3px 4px 0px 0px #7d7c7d;
+	-webkit-box-shadow: 3px 4px 0px 0px #7d7c7d;
+	box-shadow: 3px 4px 0px 0px #7d7c7d;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dedede), color-stop(1, #9c9c9c));
+	background:-moz-linear-gradient(top, #dedede 5%, #9c9c9c 100%);
+	background:-webkit-linear-gradient(top, #dedede 5%, #9c9c9c 100%);
+	background:-o-linear-gradient(top, #dedede 5%, #9c9c9c 100%);
+	background:-ms-linear-gradient(top, #dedede 5%, #9c9c9c 100%);
+	background:linear-gradient(to bottom, #dedede 5%, #9c9c9c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#9c9c9c',GradientType=0);
+	background-color:#dedede;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000405;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+	border:none;
+	width: 65px;
+	margin: 10px 10px 10px 10px;
+}
+.mainButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9c9c9c), color-stop(1, #dedede));
+	background:-moz-linear-gradient(top, #9c9c9c 5%, #dedede 100%);
+	background:-webkit-linear-gradient(top, #9c9c9c 5%, #dedede 100%);
+	background:-o-linear-gradient(top, #9c9c9c 5%, #dedede 100%);
+	background:-ms-linear-gradient(top, #9c9c9c 5%, #dedede 100%);
+	background:linear-gradient(to bottom, #9c9c9c 5%, #dedede 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c9c9c', endColorstr='#dedede',GradientType=0);
+	background-color:#9c9c9c;
+}
+.mainButton:active {
+	position:relative;
+	top:1px;
+}
+
+a.dropdown-item{
+	height: auto !important;
+  	overflow: visible !important;
+}
+
+#autocomplete-results {
+	position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+}
